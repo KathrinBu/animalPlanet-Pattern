@@ -1,9 +1,10 @@
 package com.example.animalplanetpattern;
 
-public class Fish implements IAnimals{
+public class Fish extends ObservableAnimals implements IAnimals{
     String name;
 
     public Fish(String name) {
+        super(name);
         this.name = name;
     }
 
