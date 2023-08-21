@@ -23,12 +23,17 @@ public class HelloController {
     @FXML
     Button start;
 
-    Zoo zoo = new Zoo("Кронверкский, 4");
+    Zoo zoo = Zoo.makeZoo("Кронверкский, 4");
 
     public void initialize() throws IOException {
 
         zoo.setAnimals(new AnimalReader().readAnimals("1.txt"));
         initTable();
+
+        Zoo zoo2 =Zoo.makeZoo("Московская");
+        System.out.println(zoo +" "+  zoo2);
+        System.out.println(zoo.adress);
+        System.out.println(zoo2.adress);
         //Zoo.getMove(animals);
 
     }
