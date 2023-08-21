@@ -10,7 +10,8 @@ import java.util.Scanner;
 
 public class Zoo {
 
-    String adress;
+    String address;
+
 
     private static Zoo singleZoo;
 
@@ -21,7 +22,7 @@ public class Zoo {
         return singleZoo;
     }
     private Zoo(String adress) {
-        this.adress = adress;
+        this.address = adress;
     }
 
     ObservableList<ObservableAnimal> animals = FXCollections.observableArrayList();
