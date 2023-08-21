@@ -1,6 +1,6 @@
 package com.example.animalplanetpattern;
 
-public class Tiger extends ObservableAnimals implements IAnimals{
+public class Tiger extends ObservableAnimal implements IAnimals{
     String name;
 
     public Tiger(String name) {
