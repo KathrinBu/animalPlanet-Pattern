@@ -32,8 +32,8 @@ public class HelloController {
 
         Zoo zoo2 =Zoo.makeZoo("Московская");
         System.out.println(zoo +" "+  zoo2);
-        System.out.println(zoo.adress);
-        System.out.println(zoo2.adress);
+        System.out.println(zoo.address);
+        System.out.println(zoo2.address);
         //Zoo.getMove(animals);
 
     }
